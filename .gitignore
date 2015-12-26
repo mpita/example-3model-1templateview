@@ -1,0 +1,10 @@
+;;ignorar la carpeta /venv/ creada por Virtualenv
+venv
+
+;;ignorar la carpeta migrations creada por django para los cambios de modelos en DB
+migrations
+
+;;extensiones a ignorar
+*.pyc
+
+.DS_Store
