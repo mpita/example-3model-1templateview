@@ -1,5 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Hello Word</h1>
+<h1>Ejemplo para mostrar más de un modelo</h1>
+<br />
+<h3>Dato de Modelo 1</h3>
+{% for model in model1 %}
+    <p>{{model.text}} {{model.value}}</p>
+{% endfor %}
+<br />
+<h3>Dato de Modelo 2</h3>
+{% for model in model2 %}
+    <p>{{model.text}} {{model.value}}</p>
+{% endfor %}
+<br />
+<h3>Dato de Modelo 3</h3>
+{% for model in model3 %}
+    <p>{{model.text}} {{model.value}}</p>
+{% endfor %}
+<br>
 {% endblock content %}
